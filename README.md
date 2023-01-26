@@ -17,7 +17,7 @@ The project is using a simple multi-tier architecture providing separation of co
 - A datastore for adding and retrieving orders from the database (MSSQL in this instance)
 
 ## Testing
-I decided that the most prudent testing would be to make sure the minimum width calculation was rock solid with multiple combinations of items within one order, paying close attention to the mug stacking calculation and to test the basic adding and retrieving of the orders with the controller
+I decided that the most prudent testing would be to make sure the minimum width calculation was rock solid with multiple combinations of items within one order, paying close attention to the mug stacking calculation and to test the adding and retrieving of the orders with the controller using a mocked datastore
 
 # Additional decisions and considerations for production implementations
 I chose to define the product types in code for simplicity and to show diversity of my programming skills. If this were for production then I would store the product definitions within the datastore and keep a cached version on hand when performing the width calculations
