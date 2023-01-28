@@ -1,7 +1,7 @@
 # PhotoBoxTestApi
 
 # Execution
-This project was written using Visual Studio 2022 and with a SQL Server database (easiest access I had on hand). A SQL script is included in the source if you wish to recreate the database for testing
+This project was written using Visual Studio 2022 and with a SQL Server database (easiest access I had on hand). A SQL script is included in the source if you wish to recreate the database for testing and I have used Swagger to auto build available endpoints and operations. Running the project will open the swagger definition page that will present this and allow you to execute the endpoints without the need of a client application or Postman like to. I thought that might be easier to demonstrate the functionality working.
 
 ## Functionality
 A .NET core WebAPI application to provide two entry points into the orders function of the PhotoBox system.
@@ -20,6 +20,6 @@ The project is using a simple multi-tier architecture providing separation of co
 I decided that the most prudent testing would be to make sure the minimum width calculation was rock solid with multiple combinations of items within one order, paying close attention to the mug stacking calculation and to test the adding and retrieving of the orders with the controller using a mocked datastore
 
 # Additional decisions and considerations for production implementations
-I chose to define the product types in code for simplicity and to show diversity of my programming skills. If this were for production then I would store the product definitions within the datastore and keep a cached version on hand when performing the width calculations
+I chose to define the product types in code for simplicity and to show diversity of my programming skills. If this were for production then I would store the product definitions within the datastore and keep a cached version on hand when performing the width calculations.
 
 Happy to discuss any and all of this project.
